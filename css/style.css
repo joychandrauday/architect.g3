@@ -85,7 +85,6 @@ nav a:hover{}
 .home_banner_elements{
     text-align: center;
     padding: 80px 0 0;
-    width: 75%;
     margin: 0 auto 40px;
 }
 .home_banner_heading{
@@ -93,6 +92,8 @@ nav a:hover{}
 }
 .home_banner_desc{
     padding: 20px 0;
+    width: 75%;
+    margin: 0 auto;
 }
 .banner_img{
     border-radius: 8px;
