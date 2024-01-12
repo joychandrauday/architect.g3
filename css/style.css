@@ -27,6 +27,7 @@ ul{
 }
 .btn_primary:hover{
 
+background: #db7a09;
 }
 .desc_p{
     color:#727272;
@@ -85,7 +86,7 @@ nav a:hover{}
 .home_banner_elements{
     text-align: center;
     padding: 80px 0 0;
-    margin: 0 auto 40px;
+    margin: 0 auto 6px;
 }
 .home_banner_heading{
     font-size: 3rem;
@@ -100,3 +101,44 @@ nav a:hover{}
     max-width: 100%;
 }
 /* home_banner styles */
+
+
+
+
+
+
+
+
+/* ===============responsive section===============*/
+@media screen and (max-width:576px) {
+    header{
+        text-align: center;
+        background: #ff900e;
+        padding: 30px 0;
+        border-radius: 6px;
+        flex-direction: column;
+    }
+    nav ul,nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav li{
+        margin: 5px 0px;
+    }
+    .logo_title ,nav a{
+        color: aliceblue;
+    }
+    .home_banner{
+        padding: 20px 0;
+    }
+    .home_banner_wrapper{
+        max-width: 90%;
+    }
+    .home_banner_elements{
+        padding: 30px 0;
+        margin: 0;
+    }
+    .home_banner_heading{
+        font-size: 2rem;
+    }
+}
