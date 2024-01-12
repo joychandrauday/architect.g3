@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.copyOnSelection": false,
+    "git.rememberPostCommitCommand": true,
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.stickyScroll.enabled": true
+}
