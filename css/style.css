@@ -47,6 +47,10 @@ ul {
     font-size: 45px;
     font-weight: 700;
 }
+.responsive_des{
+    max-width: 75%;
+    margin: 0 auto;
+}
 
 /* universal styles */
 /* home_banner styles */
@@ -165,6 +169,43 @@ nav a:hover {}
 }
 
 /* feature styles */
+/*extra feature styles */
+.extra_feature{
+
+}
+.extra_feature_wrapper{
+    display: flex;
+    align-items: center;
+}
+.extra_feature_text{
+    flex-basis: 50%; 
+}
+.extra_feature_text h1{
+    border-left: 4px solid #FF900E;
+    padding: 0px 0 0 20px;
+}
+.extra_feature_card_container{
+
+}
+.extra_feature_card{
+    
+}
+.extra_feature_card h3{
+
+}
+.extra_feature_card{
+
+}
+.extra_feature_image{
+    flex-basis: 50%;        
+}
+.extra_feature_image img{
+    width: 100%;
+}
+.experience_card{}
+.experience_card h1{}
+.experience_card span{}
+/*extra feature styles */
 
 
 
