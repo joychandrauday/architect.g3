@@ -42,12 +42,12 @@ ul {
 }
 
 .heading_h1 {
-    color:
-        #131313;
+    color: #131313;
     font-size: 45px;
     font-weight: 700;
 }
-.responsive_des{
+
+.responsive_des {
     max-width: 75%;
     margin: 0 auto;
 }
@@ -63,6 +63,7 @@ ul {
 .home_banner_wrapper {
     max-width: 75%;
     margin: 0 auto;
+    text-align: center;
 }
 
 header {
@@ -118,6 +119,7 @@ nav a:hover {}
 .banner_img {
     border-radius: 8px;
     max-width: 100%;
+    text-align: revert-layer;
 }
 
 /* home_banner styles */
@@ -131,14 +133,15 @@ nav a:hover {}
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 60px;
+    justify-content: center;
 }
 
 .feature_images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    flex-basis: 50%;
 }
 
 .feature_images img {
@@ -153,7 +156,7 @@ nav a:hover {}
 }
 
 .feature_title span {
-    color:#131313;
+    color: #131313;
     font-weight: 700;
 }
 
@@ -170,43 +173,109 @@ nav a:hover {}
 
 /* feature styles */
 /*extra feature styles */
-.extra_feature{
+.extra_feature {}
 
-}
-.extra_feature_wrapper{
+.extra_feature_wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 50px;
 }
-.extra_feature_text{
-    flex-basis: 50%; 
+
+.extra_feature_text {
+    flex-basis: 50%;
 }
-.extra_feature_text h1{
-    border-left: 4px solid #FF900E;
+
+.extra_feature_text h1 {
+    border-left: 5px solid #FF900E;
     padding: 0px 0 0 20px;
 }
-.extra_feature_card_container{
 
+.extra_feature_text_p {
+    margin: 20px 0 20px;
 }
-.extra_feature_card{
-    
-}
-.extra_feature_card h3{
 
-}
-.extra_feature_card{
+.extra_feature_card_container {}
 
+.extra_feature_card p {
+
+    font-size: 0.8rem;
 }
-.extra_feature_image{
-    flex-basis: 50%;        
+
+.extra_feature_card h3 {
+
+    padding: 0 0 10px;
+
+    font-size: 1rem;
 }
-.extra_feature_image img{
-    width: 100%;
+
+.extra_feature_card {
+
+    padding: 25px 33px 25px;
+
+    box-shadow: 0px 0px 8px 0px #0000007d;
+
+    margin: 15px 0;
+
+    border-radius: 8px;
 }
-.experience_card{}
-.experience_card h1{}
-.experience_card span{}
+
+.extra_feature_image {
+    flex-basis: 50%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.extra_feature_image img {
+    max-width: 93%;
+}
+
+.experience_card {
+    background: #ff900e;
+    text-align: center;
+    padding: 30px 15px;
+    width: 40%;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 25px;
+    position: absolute;
+    bottom: -55px;
+    left: -20px;
+}
+
+.experience_card h1 {
+    font-weight: 500;
+}
+
+.experience_card span {
+    font-size: 1rem;
+}
+
 /*extra feature styles */
 
+.fact_section{}
+.fact_section_wrapper{}
+.fact_section_wrapper h1{}
+.fact_section_wrapper p{
+
+}
+.facts_container{
+
+}
+.facts{
+    
+}
+.facts img{
+
+}
+.facts h4{
+
+}
+.facts p{
+
+}
 
 
 
@@ -215,9 +284,10 @@ nav a:hover {}
 
 /* ===============responsive section===============*/
 @media screen and (max-width:576px) {
-    .responsive_des{
+    .responsive_des {
         max-width: 90%;
     }
+
     header {
         text-align: center;
         background: #ff900e;
@@ -225,6 +295,7 @@ nav a:hover {}
         border-radius: 6px;
         flex-direction: column;
     }
+
     nav ul, nav {
         text-align: center;
     }
@@ -241,7 +312,7 @@ nav a:hover {}
         padding: 20px 0;
     }
 
-    
+
 
     .home_banner_elements {
         padding: 30px 0;
@@ -256,21 +327,29 @@ nav a:hover {}
         width: 100%;
     }
 
-    .feature_section{}
-    .feature_section_wrapper{
+    .feature_section {}
+
+    .feature_section_wrapper {
         flex-direction: column-reverse
     }
-    .feature_images{}
-    .feature_images img{
+
+    .feature_images {}
+
+    .feature_images img {
         max-width: 100%;
     }
-    .feature_text{}
+
+    .feature_text {}
 }
+
 @media only screen and (max-width : 1024px) {
-    .responsive_des{
+    .responsive_des {
         max-width: 90%;
     }
-    .feature_images img{
+
+    .feature_images img {
         max-width: 220px;
     }
 }
+
+f
