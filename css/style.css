@@ -52,6 +52,10 @@ ul {
     margin: 0 auto;
 }
 
+.dnone {
+    display: none;
+}
+
 /* universal styles */
 /* home_banner styles */
 .home_banner {
@@ -188,6 +192,7 @@ nav a:hover {}
 .extra_feature_text h1 {
     border-left: 5px solid #FF900E;
     padding: 0px 0 0 20px;
+    text-transform: capitalize;
 }
 
 .extra_feature_text_p {
@@ -280,6 +285,13 @@ nav a:hover {}
     padding: 30px 35px;
     text-align: center;
     line-height: 30px;
+    transition: all .5s;
+}
+
+.facts:hover {
+    background: #ff900e;
+    color: white !important;
+
 }
 
 .facts img {}
@@ -315,36 +327,41 @@ nav a:hover {}
 .sponsors_section_wrapper h1 {}
 
 .sponsors_section_wrapper p {
-    margin: 20px 0 45px;
+    margin: 20px 230px 45px;
 }
 
 .sponsors {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
 }
 
 .sponsors img {
-    max-width: 12%;
+    max-width: 60%;
     opacity: 50%;
 }
+
 /* sponsors style */
 /* footer style  */
-footer{
+footer {
 
-padding: 0 0 50px;
+    padding: 0 0 50px;
 }
-footer p{
-    color:#424242;
+
+footer p {
+    color: #424242;
     text-align: center;
     font-size: 15px;
     font-weight: 400;
 }
-.footer_wrapper{
+
+.footer_wrapper {
     padding: 25px 0;
     border-radius: 8px;
     background: #FFF4E7;
 }
+
 /* footer style  */
 
 
@@ -402,21 +419,80 @@ footer p{
         flex-direction: column-reverse
     }
 
-    .feature_images {}
+    .feature_images {
+        grid-template-columns: auto;
+    }
 
     .feature_images img {
         max-width: 100%;
     }
 
-    .feature_text {}
+    .extra_feature_wrapper {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 80px;
+    }
+
+    .extra_feature_text h1 {
+
+        font-size: 2.5rem;
+    }
+
+    .experience_card {
+
+        left: 0;
+
+        bottom: 0;
+
+        top: 0;
+
+        border-radius: 8px 0px 0px 8px;
+
+        opacity: 45%;
+
+        font-size: small;
+
+        width: 50%;
+
+    }
+
+    .fact_section_warapper p {
+
+        width: 100%;
+
+    }
+
+    .facts_container {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px 0;
+    }
+
+    .sponsors_section_wrapper p {
+        margin: 20px 0 45px;
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px 0;
+    }
+
+    .sponsors img {
+        max-width: 70%;
+    }
 }
+/* medium device */
 
 @media only screen and (max-width : 1024px) {
     .responsive_des {
         max-width: 90%;
     }
 
-    .feature_images img {
-        max-width: 220px;
+    .extra_feature_wrapper {
+        padding-bottom: 40px;
     }
 }
